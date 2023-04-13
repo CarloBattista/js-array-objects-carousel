@@ -60,6 +60,13 @@ let directoryImage = "./_assets/_resources/imgs/";
 // Seleziono dal DOM il container degli ITEMS
 const containerItems = document.querySelector(".items");
 
+// Variabile con indice di partenza
+let currentIndex = 0;
+
+// Seleziono dal DOM i button
+const prev = document.querySelector(".handelPrev");
+const next = document.querySelector(".handelNext");
+
 // ForEach
 images.forEach((element, index) => {
 
