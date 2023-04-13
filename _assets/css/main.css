@@ -100,3 +100,22 @@ img {
     font-size: 1rem;
     font-weight: 400;
 }
+
+/* Media Query */
+@media only screen and (max-width: 770px) {
+    .title {
+        font-size: 1rem;
+    }
+    .description {
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .title {
+        font-size: .8rem;
+    }
+    .description {
+        font-size: .5rem;
+    }
+}
