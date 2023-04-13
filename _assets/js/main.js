@@ -79,6 +79,12 @@ next.addEventListener("click", () => {
 
 // Al click del button Prev
 prev.addEventListener("click", () => {
+    if (currentIndex > 0) {
+        // Diminuisce di uno
+        currentIndex--;
+        // Decrementa l'index
+        setActiveImage(currentIndex);
+    }
 });
 
 // ForEach
