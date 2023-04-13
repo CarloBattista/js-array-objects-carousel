@@ -68,8 +68,13 @@ const prev = document.querySelector(".handelPrev");
 const next = document.querySelector(".handelNext");
 
 // Al click del button Next
-next.addEventListener("click", () => { 
-    
+next.addEventListener("click", () => {
+    if (currentIndex < images.length - 1) {
+        // Avanza di uno
+        currentIndex++;
+        // Incrementa l'index
+        setActiveImage(currentIndex);
+    }
 });
 
 // ForEach
