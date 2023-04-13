@@ -77,6 +77,10 @@ next.addEventListener("click", () => {
     }
 });
 
+// Al click del button Prev
+prev.addEventListener("click", () => {
+});
+
 // ForEach
 images.forEach((element, index) => {
 
