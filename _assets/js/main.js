@@ -72,9 +72,11 @@ next.addEventListener("click", () => {
     if (currentIndex < images.length - 1) {
         // Avanza di uno
         currentIndex++;
-        // Incrementa l'index
         setActiveImage(currentIndex);
+    } else {
+        currentIndex = 0;
     }
+    setActiveImage(currentIndex)
 });
 
 // Al click del button Prev
@@ -82,9 +84,10 @@ prev.addEventListener("click", () => {
     if (currentIndex > 0) {
         // Diminuisce di uno
         currentIndex--;
-        // Decrementa l'index
-        setActiveImage(currentIndex);
+    } else {
+        currentIndex = images.length - 1;
     }
+    setActiveImage(currentIndex)
 });
 
 // Arrow Function per impostare l'immagine corrente come attiva e le altre come non attiva
