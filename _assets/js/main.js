@@ -67,6 +67,11 @@ let currentIndex = 0;
 const prev = document.querySelector(".handelPrev");
 const next = document.querySelector(".handelNext");
 
+// Al click del button Next
+next.addEventListener("click", () => { 
+    
+});
+
 // ForEach
 images.forEach((element, index) => {
 
