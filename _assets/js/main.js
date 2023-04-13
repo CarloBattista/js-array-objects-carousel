@@ -51,7 +51,7 @@ const images = [
         image: '05.webp',
         title: "Marvel's Avengers",
         text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
-    }
+    }, 
 ];
 
 // path immagini
@@ -110,6 +110,14 @@ images.forEach((element, index) => {
 
     // operatore Ternario per assegnare alla variabile "isActive" il valore Active se l'index corrente è uguale all'index dell'immagine corrente
     let isActive = index === currentIndex ? "active" : "";
+
+    // Aggiungi la classe first al primo item
+    if (index === 0) {
+        isActive += " first";
+        // Aggiungi la classe last all' ultimo item
+    } else if (index === images.length - 1) {
+        isActive += "last";
+    }
 
     console.log(image, index)
 
