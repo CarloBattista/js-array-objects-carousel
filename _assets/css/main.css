@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fafafa;
+    background-color: #1b1721;
     color: #0a0a0a;
     user-select: none;
 }
@@ -67,6 +67,7 @@ img {
 }
 
 .handle .fa-solid {
+    color: #fafafa;
     font-size: 30px;
 }
 
