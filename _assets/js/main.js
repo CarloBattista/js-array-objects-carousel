@@ -91,8 +91,10 @@ prev.addEventListener("click", () => {
 const setActiveImage = (index) => {
     containerItems.querySelectorAll(".item").forEach((item, itemIndex) => {
         if (itemIndex === index) {
+            // Aggiunge la classe Active
             item.classList.add("active");
         } else {
+            // Rimuove la classe Active
             item.classList.remove("active");
         }
     });
@@ -105,6 +107,9 @@ images.forEach((element, index) => {
     const image = element.image
     const title = element.title
     const text = element.text
+
+    // operatore Ternario per assegnare alla variabile "isActive" il valore Active se l'index corrente è uguale all'index dell'immagine corrente
+    let isActive = index === currentIndex ? "active" : "";
 
     console.log(image, index)
 
