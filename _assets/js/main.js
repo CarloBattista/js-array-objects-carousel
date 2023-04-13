@@ -87,6 +87,17 @@ prev.addEventListener("click", () => {
     }
 });
 
+// Arrow Function per impostare l'immagine corrente come attiva e le altre come non attiva
+const setActiveImage = (index) => {
+    containerItems.querySelectorAll(".item").forEach((item, itemIndex) => {
+        if (itemIndex === index) {
+            item.classList.add("active");
+        } else {
+            item.classList.remove("active");
+        }
+    });
+};
+
 // ForEach
 images.forEach((element, index) => {
 
