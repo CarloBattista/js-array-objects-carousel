@@ -70,4 +70,14 @@ images.forEach((element, index) => {
 
     console.log(image, index)
 
+    containerItems.innerHTML += `
+    <div class="item">
+        <img src="${directoryImage}${image}" alt="${title}">
+        <div class="overlay">
+            <h2 class="title">${title}</h2>
+            <p class="description">${text}</p>
+        </div>
+    </div>
+    `;
+
 });
