@@ -56,3 +56,18 @@ const images = [
 
 // path immagini
 let directoryImage = "./_assets/_resources/imgs/";
+
+// Seleziono dal DOM il container degli ITEMS
+const containerItems = document.querySelector(".items");
+
+// ForEach
+images.forEach((element, index) => {
+
+    // Creao una costante per gli elementi
+    const image = element.image
+    const title = element.title
+    const text = element.text
+
+    console.log(image, index)
+
+});
